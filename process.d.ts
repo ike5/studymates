@@ -1,6 +1,6 @@
 declare namespace NodeJS {
 	export interface ProcessEnv {
-		GOOGLE_CLIENT_ID: string;
-		GOOGLE_CLIENT_SECRET: string;
+		NEXT_GOOGLE_CLIENT_ID: string;
+		NEXT_GOOGLE_CLIENT_SECRET: string;
 	}
 }
