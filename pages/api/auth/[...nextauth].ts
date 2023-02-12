@@ -2,6 +2,7 @@ import NextAuth from 'next-auth/next';
 import GoogleProvider from 'next-auth/providers/google';
 
 // Initialize NextAuth
+// Make sure to include secret and providers
 export default NextAuth({
 	providers: [
 		GoogleProvider({
