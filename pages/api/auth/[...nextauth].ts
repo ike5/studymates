@@ -3,6 +3,7 @@ import GoogleProvider from 'next-auth/providers/google';
 
 // Initialize NextAuth
 // Make sure to include secret and providers
+// Fix vercel env variables
 export default NextAuth({
 	providers: [
 		GoogleProvider({
