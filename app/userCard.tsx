@@ -10,7 +10,7 @@ export function UserCard({ user }: { user: DefaultSession['user'] }) {
 				<div className='avatar online'>
 					<div className='w-24 rounded-full'>
 						<Image
-							src={user?.image}
+							src={user?.image as string}
 							width={200}
 							height={200}
 							alt='Avatar'
