@@ -6,6 +6,7 @@ export default function Login() {
 	// get session fron nextAuth
 	const { data: session } = useSession();
 	// if user exists => show a Sign Out button and thier information
+	console.log(session)
 
 	if (session) {
 		return (
