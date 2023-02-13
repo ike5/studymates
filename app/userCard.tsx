@@ -6,7 +6,7 @@ export function UserCard({ user }: { user: DefaultSession['user'] }) {
 	console.log(user?.image);
 
 	// save a file to the filesystem for every user
-	fs.writeFileSync(`./public/${user?.name}.txt`, user?.email as string);
+	// fs.writeFileSync(`./public/${user?.name}.txt`, user?.email as string);
 
 	return (
 		<div className='card w-96 bg-base-100 shadow-xl'>
