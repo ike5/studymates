@@ -1,14 +1,13 @@
 'use client';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSession, signIn } from 'next-auth/react';
-import { UserCard } from '../userCard';
 import Dashboard from '../dashboard/page';
 
 function Login() {
 	const { data: session } = useSession();
 
 	if (session) {
-		return <Dashboard />;
+		return <Dashboard  user={session?.user}/>;
 	} else {
 		return (
 			<>

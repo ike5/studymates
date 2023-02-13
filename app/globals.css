@@ -2,35 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-}
-
 html,
 body {
 	max-width: 100vw;
 	overflow-x: hidden;
 }
 
-body {
-	color: rgb(var(--foreground-rgb));
-	background: linear-gradient(
-			to bottom,
-			transparent,
-			rgb(var(--background-end-rgb))
-		)
-		rgb(var(--background-start-rgb));
+.dashboard-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: min-content 1fr 1fr;
+	gap: 0px 0px;
+	height: 100vh;
+	height: 100dvh;
+	max-width: 1300px;
+	overflow-x: hidden;
+	grid-auto-flow: row;
+	grid-template-areas:
+		'work work navbar'
+		'work work main'
+		'work work chat';
+
+	--tw-bg-opacity: 1;
+	background-color: rgb(82 82 91 / var(--tw-bg-opacity));
+	margin: 0 auto;
 }
 
-a {
-	color: inherit;
-	text-decoration: none;
+.chat {
+	grid-area: chat;
+  --tw-bg-opacity: 1;
+	background-color: rgb(82 82 31 / var(--tw-bg-opacity));
 }
 
-@media (prefers-color-scheme: dark) {
-	html {
-		color-scheme: dark;
-	}
+.main {
+	grid-area: main;
+  --tw-bg-opacity: 1;
+	background-color: rgb(23 82 91 / var(--tw-bg-opacity));
+}
+
+.navbar {
+	grid-area: navbar;
+  --tw-bg-opacity: 1;
+	background-color: rgb(82 22 91 / var(--tw-bg-opacity));
+}
+
+.work {
+	grid-area: work;
+  --tw-bg-opacity: 1;
+	background-color: rgb(82 22 21 / var(--tw-bg-opacity));
 }
