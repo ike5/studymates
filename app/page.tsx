@@ -95,9 +95,9 @@ export default function Home() {
 					</ul>
 				</div>
 				<div className='navbar-end'>
-					<div className='btn'>
-						<Link href={'login'}>Login</Link>
-					</div>
+					<Link href={'login'}>
+						<div className='btn'>Login</div>
+					</Link>
 				</div>
 			</div>
 		</main>

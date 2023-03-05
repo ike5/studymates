@@ -30,24 +30,24 @@ body {
 
 .chat {
 	grid-area: chat;
-  --tw-bg-opacity: 1;
-	background-color: rgb(82 82 31 / var(--tw-bg-opacity));
+  /* --tw-bg-opacity: 1;
+	background-color: rgb(82 82 31 / var(--tw-bg-opacity)); */
 }
 
 .main {
 	grid-area: main;
-  --tw-bg-opacity: 1;
-	background-color: rgb(23 82 91 / var(--tw-bg-opacity));
+  /* --tw-bg-opacity: 1;
+	background-color: rgb(23 82 91 / var(--tw-bg-opacity)); */
 }
 
 .navbar {
 	grid-area: navbar;
-  --tw-bg-opacity: 1;
-	background-color: rgb(82 22 91 / var(--tw-bg-opacity));
+  /* --tw-bg-opacity: 1;
+	background-color: rgb(82 22 91 / var(--tw-bg-opacity)); */
 }
 
 .work {
 	grid-area: work;
-  --tw-bg-opacity: 1;
-	background-color: rgb(82 22 21 / var(--tw-bg-opacity));
+  /* --tw-bg-opacity: 1;
+	background-color: rgb(82 22 21 / var(--tw-bg-opacity)); */
 }
