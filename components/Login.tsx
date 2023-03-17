@@ -6,7 +6,7 @@ export default function Login() {
 	// get session fron nextAuth
 	const { data: session } = useSession();
 	// if user exists => show a Sign Out button and thier information
-	console.log(session)
+	console.log(session);
 
 	if (session) {
 		return (
@@ -16,11 +16,11 @@ export default function Login() {
 					type='button'
 					className='btn btn-primary'
 				>
-					Sign Out of Google
+					Sign Out
 				</button>
 				{/* Pass session info to server component*/}
 
-        <UserCard user={session?.user} />
+				<UserCard user={session?.user} />
 			</>
 		);
 	} else {
@@ -31,7 +31,7 @@ export default function Login() {
 					type='button'
 					className='btn btn-primary'
 				>
-					Sign In with Google
+					Sign In
 				</button>
 			</>
 		);
